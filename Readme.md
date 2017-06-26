@@ -15,10 +15,11 @@ To use this project
 5. Create a user
     php artisan tinker
     
-    5a. Create a Random user
-        factory(App\User::class)->create();
-    5b. Create a specific user
-        $user = new App\User();
-        $user->name = '<Users Name>';
-        $user->number = '<Users Number>;
-        $user->save();
+5a. Create a Random user (In Tinker)
+    factory(App\User::class)->create();
+    
+5b. Create a specific user (In Tinker)
+    $user = new App\User();
+    $user->name = '<Users Name>';
+    $user->number = '<Users Number>;
+    $user->save();
