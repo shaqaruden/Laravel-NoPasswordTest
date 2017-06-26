@@ -4,13 +4,13 @@ To use this project
     composer update --no-scripts
 
 ## Copy .env file
-    cp .env.example .
-
-## Change Database to sqlite
-    DB_CONNECTION=sqlite
+    cp .env.example
 
 ## Generate App Key
     php artisan key:generate
+
+## Change Database to sqlite
+    DB_CONNECTION=sqlite
 
 ## Setup Database
     touch database/database.sqlite
