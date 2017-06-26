@@ -2,12 +2,12 @@ To use this project
 
 ## Clone repository and run
     composer update --no-scripts
-    
+
 ## Generate App Key
     php artisan key:generate
 
 ## Copy .env file
-    cp .env.example
+    cp .env.example .env
 
 ## Change Database to sqlite
     DB_CONNECTION=sqlite
