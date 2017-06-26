@@ -12,13 +12,12 @@ To use this project
 ## Setup Database
     touch database/database.sqlite
 
-## Create a user
+## Create a random user
     php artisan tinker
-    
-1. Create a Random user (In Tinker)
     factory(App\User::class)->create();
 
-2. Create a specific user (In Tinker)
+## Create a specific user
+    php artisan tinker
     $user = new App\User();
     $user->name = '<Users Name>';
     $user->number = '<Users Number>;
