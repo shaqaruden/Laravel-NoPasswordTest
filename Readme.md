@@ -3,8 +3,11 @@ To use this project
 ## Clone repository and run
     composer update --no-scripts
 
-## Copy and edit .env file
-    cp .env.example .env
+## Copy .env file
+    cp .env.example .
+
+## Change Database to sqlite
+    DB_CONNECTION=sqlite
 
 ## Generate App Key
     php artisan key:generate
