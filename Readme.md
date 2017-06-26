@@ -1,24 +1,24 @@
 To use this project 
 
-1. clone repository and run
+## Clone repository and run
     composer update --no-scripts
 
-2. Copy and edit .env file
+## Copy and edit .env file
     cp .env.example .env
 
-3. Generate App Key
+## Generate App Key
     php artisan key:generate
 
-4. Setup Database
+## Setup Database
     touch database/database.sqlite
 
-5. Create a user
+## Create a user
     php artisan tinker
     
-5a. Create a Random user (In Tinker)
+1. Create a Random user (In Tinker)
     factory(App\User::class)->create();
-    
-5b. Create a specific user (In Tinker)
+
+2. Create a specific user (In Tinker)
     $user = new App\User();
     $user->name = '<Users Name>';
     $user->number = '<Users Number>;
